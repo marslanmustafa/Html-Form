@@ -113,10 +113,7 @@ body{
   .testimonials{
     grid-template-columns: repeat(1,1fr);
   }
-  .testimonials .video{
-    width: fit-content;
-    height: auto;
-}
+
 }
 
 @media (max-width: 640px) {
