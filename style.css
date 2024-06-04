@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+
+#root{
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1em 2em;
+}
+.content{
+  width: 640px;
+  margin: auto;
+  padding: 1em 10px 10px 10px;
+}
+.content h1{
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 1em;
+}
+.form{
+  margin-top: 1em;
+  padding: 14px 10px;
+  width: 560px;
+  margin: auto;
+  box-shadow: 1px 1px 3px rgb(168, 162, 162);
+  border-radius: 6px;
+}
+.form form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1em;
+  flex-direction: column;
+
+}
+.inputBox{
+  width: 100%;
+  padding: 2px 4px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: column;
+  font-size: 20px;
+
+}
+.inputBox label{
+  font-size: 20px;
+  color: rgb(109, 109, 109);
+}
+
+.inputBox input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #acacac;
+  padding:6px 10px;
+  outline: none;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.button{
+  padding: 10px 16px;
+  font-size: 20px;
+  width: 100%;
+  background-color: #3ea0c4;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.testimonialDiv{
+  padding-top: 3em;
+}
+
+.testimonialDiv h1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.testimonials{
+  padding: 2em 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  gap: 1em;
+}
+
+.testimonials .video{
+  width: 100% !important;
+  position: relative;
+  margin: auto;
+  height: 220px;
+  overflow: hidden;
+  object-fit: contain;
+  box-shadow:1px 1px 2px #acacac;
+}
+@media (max-width: 1180px) {
+  .testimonials{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 826px) {
+  .testimonials{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .testimonials .video{
+    width: fit-content;
+    height: auto;
+}
+}
+
+@media (max-width: 640px) {
+  #root{
+    padding: 1em 10px;
+  }
+
+.content{
+  width: 100%;
+}
+.content h1{
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 1em;
+}
+.form{
+  margin-top: 1em;
+  padding: 14px 0;
+  width: 100%;
+  box-shadow: none;
+}
+.inputBox label{
+  font-size: 18px;
+
+}
+
+.inputBox input{
+  font-size: 17px;
+}
+.button{
+  font-size: 18px;
+}
+
+.testimonialDiv h1{
+  font-size: 28px;
+}
+}
