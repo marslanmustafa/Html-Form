@@ -112,6 +112,7 @@ body{
 @media (max-width: 826px) {
   .testimonials{
     grid-template-columns: repeat(1,1fr);
+    gap: 1.8em;
   }
 
 }
